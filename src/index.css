@@ -11,4 +11,11 @@
     color: #D4AF37; /* Example color */
     font-size: 30px;
     font-weight: bold;
-  }
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    .custom-span {
+        font-size: 25px; /* Adjusted font size for mobile devices */
+    }
+}

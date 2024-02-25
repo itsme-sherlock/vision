@@ -1,6 +1,7 @@
 import React from 'react'
 import redwood from '../../assets/redwood.png'
 import PropertyCards from './cards'
+
 const Properties = () => {
   return (
       <section className='flex flex-col gap-10  bg-visionBlue p-10'> 
