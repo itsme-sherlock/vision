@@ -3,16 +3,16 @@ import React from 'react'
 
 const Cards = ({heading,csvg,content}) => {
   return (
-    <div className='bg-white w-80  p-5'>
+    <div className=' w-[300px] bg-white p-5 rounded-lg '>
         {/* card heading  */}
-        <div className='text-visionGold text-center font-semibold text-4xl'>{heading}
+        <div className='text-visionGold text-left font-semibold text-2xl'>{heading}
         </div>
         {/* card svg */}
-        <div>
+        {/* <div>
             <img src={csvg} alt='club house'/>
-        </div>
+        </div> */}
         {/* card content */}
-        <div className='text-sm sm:text-base'>
+        <div className='text-sm sm:text-base whitespace-pre-wrap'>
         {content}
         </div>
     </div>

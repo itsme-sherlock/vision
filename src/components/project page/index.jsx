@@ -5,7 +5,7 @@ import WhyVision from './WhyVision';
 import Features from './features/features';
 
 
-const VisionFarms = () => {
+const VisionPrimeHome = () => {
   return (
     <div><WhoBenifits/>
     <VideoSection/>
@@ -15,4 +15,4 @@ const VisionFarms = () => {
   )
 }
 
-export default VisionFarms
+export default VisionPrimeHome

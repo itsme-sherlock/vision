@@ -1,5 +1,5 @@
 import React from "react";
-import landing from "../assets/hero/landing.png";
+import landing from "../../assets/hero/landing.png";
 
 const Hero = () => {
   return (

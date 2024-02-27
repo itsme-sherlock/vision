@@ -1,5 +1,5 @@
 import React from 'react'
-import redwood from '../../assets/redwood.png'
+import redwood from '../../../assets/redwood.png'
 import PropertyCards from './cards'
 
 const Properties = () => {

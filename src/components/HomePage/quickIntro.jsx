@@ -1,6 +1,6 @@
 import React from "react";
-import door from "../assets/door.png";
-import quickIntro from '../assets/quickIntro.png'
+import door from "../../assets/door.png";
+import quickIntro from '../../assets/quickIntro.png'
 
 const QuickIntro = () => {
   return (

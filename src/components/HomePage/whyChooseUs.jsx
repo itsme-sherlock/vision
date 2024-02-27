@@ -1,5 +1,5 @@
 import React from "react";
-import whyLogo from "../assets/whyLogo.png";
+import whyLogo from '../../assets/whyLogo.png'
 
 const WhyChooseUs = () => {
   return (
