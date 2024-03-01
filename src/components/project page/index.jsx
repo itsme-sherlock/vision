@@ -3,6 +3,7 @@ import WhoBenifits from './whoBenifits/whoBenifits';
 import VideoSection from './VideoSection';
 import WhyVision from './WhyVision';
 import Features from './features/features';
+import VideoTemplate from './customerReview/VideoTemplate';
 
 
 const VisionPrimeHome = () => {
@@ -11,6 +12,7 @@ const VisionPrimeHome = () => {
     <VideoSection/>
     <WhyVision/>
     <Features/>
+    <VideoTemplate/>
     </div>
   )
 }
