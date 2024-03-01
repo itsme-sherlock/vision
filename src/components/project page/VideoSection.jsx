@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
-const VideoSection = () => {
+const VideoSection = ({src}) => {
   const controls = useAnimation();
   const videoRef = useRef(null);
 
@@ -38,7 +38,7 @@ const VideoSection = () => {
     >
       <iframe
         className='w-full h-64  sm:h-[500px] '
-        src="https://www.youtube.com/embed/MJusYxG1WoM"
+        src={src}
         title="Vision Forest - Project Video | Ft: Rajmohan | Farmland Project|"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

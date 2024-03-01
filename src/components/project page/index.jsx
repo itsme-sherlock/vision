@@ -7,9 +7,10 @@ import VideoTemplate from './customerReview/VideoTemplate';
 
 
 const VisionPrimeHome = () => {
+  
   return (
-    <div><WhoBenifits/>
-    <VideoSection/>
+    <div><WhoBenifits mainHeading={"Vision Prime"}/>
+    <VideoSection src={"https://www.youtube.com/embed/KP-T6X74B6A"}/>
     <WhyVision/>
     <Features/>
     <VideoTemplate/>
@@ -18,3 +19,4 @@ const VisionPrimeHome = () => {
 }
 
 export default VisionPrimeHome
+

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import SlideShowCard from "./slideShowCard";
 import { motion } from "framer-motion";
+import VisionButton from '../../button/button';
 
-const WhoBenefits = () => {
+const WhoBenefits = ({mainHeading}) => {
   const slides = [
     {
       heading: "STATE HIGHWAY",
@@ -65,7 +66,7 @@ const WhoBenefits = () => {
             animate={{ scale: 1, opacity: 1 }} // Final scale (original size)
             transition={{ duration: 0.2, delay: 3, ease: "easeInOut" }} // Animation duration and delay
           >
-            VISION’S PRIME
+            {mainHeading}
           </motion.div>
         </div>
       </motion.div>
@@ -80,6 +81,7 @@ const WhoBenefits = () => {
           content={slides[currentSlide].content}
         />
       </motion.div>
+      <VisionButton/>
     </div>
   );
 };
