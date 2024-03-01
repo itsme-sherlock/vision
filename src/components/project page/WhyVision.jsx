@@ -13,7 +13,7 @@ const WhyVision = () => {
         {/* left */}
         <div>
           <h1 className="text-3xl sm:text-6xl font-bold text-visionBlue sm:text-left text-center">Why choose Vision</h1>
-          <div className="flex flex-wrap overflow-x-scroll px-20 sm:px-4">
+          <div className="flex flex-wrap overflow-x-scroll sm:overflow-hidden px-20 sm:px-4">
               <ul  className="flex flex-col sm:grid gap-16 pt-16 text-xs sm:text-xl">
                 <motion.li ref={ref}
                   initial={{x:-100,opacity:0}}
