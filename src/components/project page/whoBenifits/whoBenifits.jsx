@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import VisionButton from '../../button/button';
 
 const WhoBenefits = ({mainHeading}) => {
-  const slides = [
+  const slides = [  
     {
       heading: "STATE HIGHWAY",
       content: `Tiruvallur and Kancheepuram districts may provide a convenient route from Chennai to Karnataka as a result of this road improvement. The two-lane road from Sunguarschatram to Mappedu is currently being expanded into a four-lane road, making it simple to travel and then`,
@@ -60,7 +60,7 @@ const WhoBenefits = ({mainHeading}) => {
         animate={{ width: "100%", opacity: 1 }} // Final width (fully revealed) and opacity (visible)
         transition={{ duration: 1, delay: 2, ease: "easeInOut" }} // Animation duration, delay, and ease
       >
-        <div className="text-4xl sm:text-6xl text-visionBlue text-center tracking-wider">
+        <div className="text-4xl sm:text-6xl text-visionBlue text-center tracking-wider py-3">
           <motion.div
             initial={{ scale: 10, opacity: 0 }} // Initial scale (larger size)
             animate={{ scale: 1, opacity: 1 }} // Final scale (original size)
