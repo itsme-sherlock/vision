@@ -88,7 +88,7 @@ const index = () => {
   return (
     
     <div>
-      <WhoBenefits mainHeading={'Want to become a Successful Real Estate BOM'} slides={slides}/>
+      <WhoBenefits mainHeading={'Want a Successful Real Estate Career ?'} slides={slides}/>
       <VideoSection src={"https://www.youtube.com/embed/MJusYxG1WoM"} />
       <WhyVision />
       <Features details={details}/>
