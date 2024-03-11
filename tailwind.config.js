@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
+        'inter': ['inter', 'serif'],
       },
       colors: {
         visionBlue: '#003049',

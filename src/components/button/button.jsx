@@ -1,21 +1,11 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
 
-const button = () => {
+const Button = ({content}) => {
   return (
-    <div className="flex justify-center">
-      <motion.button
-        className="my-5 p-3 w-fit text-base sm:text-2xl bg-visionBlue rounded-md text-white "
-        whileHover={{
-          border:'solid #D4AF37 10px',
-          transition: { duration: 0.2 },
-        }}
-        whileTap={{ scale: 0.9 }}
-      >
-        Book your dream plot for just Rs 5000
-      </motion.button>
+    <div className='flex items-center justify-center my-5'>
+        <a href='https://docs.google.com/forms/d/1y1W7nqUwNu-jcrQRJ_Aw0KoYOij5ka4akmdDS-DUjvk/edit' className='w-fit bg-visionBlue p-2 sm:p-5 text-white flex cursor-pointer rounded-lg tracking-wide items-center justify-center font-bold' >{content}</a>
     </div>
-  );
-};
+  )
+}
 
-export default button;
+export default Button
