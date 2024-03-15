@@ -4,8 +4,8 @@ import React from 'react';
 const VideoTemplate = () => {
   const videos = [
     {
-      src: 'https://www.youtube.com/embed/EyXsg6w35KI',
-      title: 'Mr Karthikeyan Family about Vision Properties',
+      src: 'https://www.youtube.com/embed/r0RSiNJs6Yg',
+      title: 'My life After Vision Property',
     },
     {
       src: 'https://www.youtube.com/embed/nFODZpS0er0',
@@ -18,7 +18,7 @@ const VideoTemplate = () => {
   ];
 
   return (
-    <div className='flex gap-5 overflow-x-scroll p-5'>
+    <div className='flex flex-col justify-center items-center gap-5 overflow-x-scroll p-5'>
       
   <>
     {videos.map((video, index) => (

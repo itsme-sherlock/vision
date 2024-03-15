@@ -31,9 +31,9 @@ const VideoSection = ({src}) => {
   return (
     <motion.div
       ref={videoRef}
-      initial={{ opacity: 1, scale: 1 }}
-      animate={controls}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{opacity: 1,scale: 1}}
+      transition={{ duration: 0.5, delay:5 }}
       className=' p-10 flex justify-center items-center bg-visionBlue'
     >
       <iframe

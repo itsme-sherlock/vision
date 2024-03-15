@@ -7,6 +7,9 @@ const WhyVision = () => {
   const { ref, inView } = useInView({
     threshold: 0.1, // Trigger animation when 50% of the element is in the viewport
   });
+  console.log('inView why '+inView);
+  console.log('ref why '+ref);
+
   return (
     <section className="sm:flex flex-wrap ">
       <div className="sm:flex py-10 sm:pl-10 items-center">

@@ -9,6 +9,13 @@ import VideoTemplate from "../project page/customerReview/VideoTemplate";
 import Button from "../Button/Button";
 import Title from "../title/Title";
 const index = () => {
+  const handleContactUsClick = () => {
+    // Scroll to the Contact Us form
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  };
   const slides = [
 
     {
@@ -85,18 +92,16 @@ const index = () => {
     },
   ];
   return (
-    
     <div>
       <Title mainHeading={'Want Successful Real Estate Career ?'}/>
-      <VideoSection src={"https://www.youtube.com/embed/MJusYxG1WoM"} />
-      <Button content={"Start your Real Estate Career Here"}/>
+      <VideoSection src={"https://www.youtube.com/embed/aEUjESsg93s"} />
+      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
       <Features details={details}/>
-      <Button content={"Book your Plot for just RS 5000"}/>
+      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
       <WhyVision />
-      <Button content={"Contact us"}/>
-      <WhoBenefits  slides={slides}/>
+      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
+      <WhoBenefits slides={slides}/>
       <VideoTemplate videos={videos}/>
-      <Button content={"Contact us"}/>
     </div>
   );
 };
