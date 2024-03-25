@@ -1,16 +1,16 @@
 import React from "react";
 import VideoSection from "../project page/VideoSection";
-
 import WhoBenefits from "../project page/whoBenifits/whoBenifits";
-import WhyVision from '../project page/WhyVision'
+import WhyVision from '../project page/WhyVision';
 import Features from "../project page/features/features";
-import clubHouse from '../../assets/club house.png'
+import clubHouse from '../../assets/club house.png';
 import VideoTemplate from "../project page/customerReview/VideoTemplate";
-import Button from "../Button/Button";
+import Button from '../button/Btn'
 import Title from "../title/Title";
-const index = () => {
+
+
+const Index = () => {
   const handleContactUsClick = () => {
-    // Scroll to the Contact Us form
     window.scrollTo({
       top: document.body.scrollHeight,
       behavior: 'smooth'
@@ -79,31 +79,33 @@ const index = () => {
   ];
   const videos = [
     {
-      src: 'https://www.youtube.com/embed/EyXsg6w35KI',
-      title: 'Mr Karthikeyan Family about Vision Properties',
+      src: "https://www.youtube.com/embed/aInhxNh8aB8",
+      title: "HouseHold Worker To Realtor | Successful Journey ",
     },
     {
-      src: 'https://www.youtube.com/embed/nFODZpS0er0',
-      title: 'Mrs Janani about Vision Properties',
+      src: "https://www.youtube.com/embed/r9LPajesVCE",
+      title: "Flight In-charge To Successful Realtor | #VisionStories | Business Journey",
     },
     {
-      src: 'https://www.youtube.com/embed/SxhuGJfsRQ4',
-      title: 'Mr Vinoth about Vision Properties',
+      src: "https://www.youtube.com/embed/D3Q9sZ1m3N8",
+      title: "Bike Taxi Driver to Successful Realtor | #VisionStories | Business Journey",
     },
   ];
+
   return (
     <div>
       <Title mainHeading={'Want Successful Real Estate Career ?'}/>
       <VideoSection src={"https://www.youtube.com/embed/aEUjESsg93s"} />
-      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
+      <Button content={"Contact us"} onClick={handleContactUsClick} />
       <Features details={details}/>
-      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
+      <Button content={"Contact us"} onClick={handleContactUsClick} />
       <WhyVision />
-      <Button content={"Contact us"} onClick={handleContactUsClick} /> {/* Pass handleContactUsClick as onClick prop */}
+      <Button content={"Contact us"} onClick={handleContactUsClick} />
       <WhoBenefits slides={slides}/>
       <VideoTemplate videos={videos}/>
     </div>
   );
 };
 
-export default index;
+export default Index;
+

@@ -1,7 +1,6 @@
 import React from "react";
 import SlideShowCard from "./slideShowCard";
-// import { motion } from "framer-motion";
-// import VisionButton from '../../Button/Button';
+
 
 const WhoBenefits = ({slides}) => {
   

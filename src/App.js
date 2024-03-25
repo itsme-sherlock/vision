@@ -3,7 +3,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/HomePage/navbar";
 import VisionPrimeHome from "./components/project page/index.jsx";
 import HomePage from "./components/HomePage/homepage";
-import BOMLanding from "./components/BOM page/index";
+import BOMLanding from "./components/bomPage/index";
 import ContactUs from "./components/HomePage/ContactUs.jsx";
 
 function App() {

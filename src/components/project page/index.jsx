@@ -118,16 +118,16 @@ These commercial hubs ensure that residents can conveniently access goods and se
   ];
   const videos = [
     {
-      src: "https://www.youtube.com/embed/EyXsg6w35KI",
-      title: "Mr Karthikeyan Family about Vision Properties",
+      src: "https://www.youtube.com/embed/aInhxNh8aB8",
+      title: "HouseHold Worker To Realtor | Successful Journey ",
     },
     {
-      src: "https://www.youtube.com/embed/nFODZpS0er0",
-      title: "Mrs Janani about Vision Properties",
+      src: "https://www.youtube.com/embed/r9LPajesVCE",
+      title: "Flight In-charge To Successful Realtor | #VisionStories | Business Journey",
     },
     {
-      src: "https://www.youtube.com/embed/SxhuGJfsRQ4",
-      title: "Mr Vinoth about Vision Properties",
+      src: "https://www.youtube.com/embed/D3Q9sZ1m3N8",
+      title: "Bike Taxi Driver to Successful Realtor | #VisionStories | Business Journey",
     },
   ];
 
@@ -144,3 +144,5 @@ These commercial hubs ensure that residents can conveniently access goods and se
 };
 
 export default VisionPrimeHome;
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/D3Q9sZ1m3N8" title="Bike Taxi Driver to Successful Realtor | #VisionStories | Business Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

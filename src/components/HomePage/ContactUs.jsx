@@ -14,22 +14,37 @@ function ContactForm() {
   });
 
   const handleChange = (e) => {
+    console.log(e.target.name);
+
+
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    
 
+    if (formData.phone) {
+      
+      if (formData.phone.length !==10) {
+   
+        alert("Please enter a valid mobile number");
+        return; // Prevent further execution of handleSubmit if validation fails
+      }
+    }
+  
     try {
       await emailjs.sendForm(
-        "service_w2l42sx",
-        "template_ygnyg7v",
+        "service_scw6xo7",
+        "template_ea4rj85",
         e.target,
-        "p89IZGlGey1j2RJ5F"
+        "xh6Z-iXWoexUBwXkJ"
       );
+  
       setSetsubmitForm(true);
       console.log("Email sent successfully");
-
+  
       // Optionally, reset the form fields after successful submission
       setFormData({
         name: "",
@@ -42,6 +57,7 @@ function ContactForm() {
       console.error("Error sending email:", error);
     }
   };
+  
 
   const inputStyle =
     "font-inter border-2 border-black bg-white text-black placeholder:text-black focus:outline-none focus:border-4 focus:border-black focus:placeholder-none focus:bg-visionGold rounded-lg h-10 p-2";
@@ -121,7 +137,7 @@ function ContactForm() {
         />
         {/* phone */}
         <input
-          type="tel"
+          type="number"
           name="phone"
           id="phone"
           placeholder="Mobile Number"
